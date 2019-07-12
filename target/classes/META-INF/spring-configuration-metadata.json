@@ -1,0 +1,62 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource",
+      "type": "com.concept.master.config.MasterDataBaseConfigProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.connection-timeout",
+      "description": "Número máximo de milissegundos que um cliente aguardará por uma conexão\r\n da piscina. Se este tempo for excedido sem uma conexão\r\n disponível, uma SQLException será lançada de\r\n javax.sql.DataSource.getConnection ().",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.idle-timeout",
+      "description": "Esta propriedade controla o tempo máximo (em milissegundos) que\r\n uma conexão pode ficar inativa na piscina. Se uma conexão é\r\n aposentado como ocioso ou não está sujeito a uma variação máxima de +30 segundos,\r\n e variação média de +15 segundos. Uma conexão nunca será retirada\r\n como ocioso antes desse tempo limite. Um valor de 0 significa que as conexões inativas são\r\n nunca removido da piscina.",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.max-pool-size",
+      "description": "A propriedade controla o tamanho máximo permitido para o pool,\r\n incluindo conexões inativas e em uso. Basicamente este valor\r\n determinar o número máximo de conexões reais para o banco de dados\r\n backend.\r\n\r\n Quando o pool atinge esse tamanho e não há conexões ociosas disponíveis,\r\n chamadas para getConnection () serão bloqueadas por até connectionTimeout\r\n Milissegundos antes do tempo limite.",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.min-idle",
+      "description": "A propriedade controla o número mínimo de conexões ociosas que\r\n HikariCP tenta manter no pool, incluindo ocioso e em uso\r\n conexões. Se as conexões ociosas ficarem abaixo desse valor, o HikariCP\r\n Faça o melhor esforço para restaurá-los de forma rápida e eficiente.",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.pool-name",
+      "description": "O nome do pool de conexão do banco de dados mestre",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.concept.master.config.MasterDataBaseConfigProperties",
+      "name": "app.master.datasource.username",
+      "type": "java.lang.String"
+    }
+  ]
+}
